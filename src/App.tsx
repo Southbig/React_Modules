@@ -1,18 +1,17 @@
-import './App.css'
 import styled from 'styled-components'
+import ModaltestPage from './pages/modaltestPage'
 
 function App() {
 
   return (
-    <>
+    <Container>
     <div>main</div>
-    <Test>main</Test>
-    </>
+    <ModaltestPage/>
+    </Container>
   )
 }
 
-const Test = styled.div`
-  color: red;
+const Container = styled.div`
   font-size: 20px;
 `
 
