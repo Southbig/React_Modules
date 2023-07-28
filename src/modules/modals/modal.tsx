@@ -19,12 +19,12 @@ const Modal = ({isBackgroundclose, component}: Props) => {
     removeModal()
   }
   const handleBackgroundClose = () => {
-    isBackgroundclose ? removeModal() : null
+    isBackgroundclose && removeModal()
   }
   return (
     <ModalBackground onClick={() => handleBackgroundClose()}>
       <ModalContainer>
-      <div>Modal !</div>
+      <div>재사용 Modal</div>
       <component.component/>
       </ModalContainer>
     </ModalBackground>

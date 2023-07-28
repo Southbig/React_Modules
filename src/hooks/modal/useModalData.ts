@@ -14,7 +14,8 @@ export const useModalData = () => {
     return data
   })
 
+
   return {
-    modalDataList
+    modalDataList,
   }
 }
