@@ -9,23 +9,21 @@ const ModalContainer = () => {
 
   console.log('findModalcontent', findModalcontent)
 
-  // const sendModalDataList = modalDataList.map((data) => (
-  //   <div key={data.title}>
+  const sendModalDataList = modalDataList.map((data) => (
+    <div key={data.title}>
       
-
-  //     <Modal isBackgroundclose={data.isBackgroundClose} component={data} />
-      
-  //   </div>
-  // ))
-
-  const sendModalDataList = modalDataList.filter(data => findModalcontent(data.title)).map(data => (
-        <div key={data.title}>
-      
-
       <Modal isBackgroundclose={data.isBackgroundClose} component={data} />
       
     </div>
   ))
+
+  // const sendModalDataList = modalDataList.filter(data => findModalcontent(data.title)).map(data => (
+  //       <div key={data.title}>
+      
+  //     <Modal isBackgroundclose={data.isBackgroundClose} component={data} />
+      
+  //   </div>
+  // ))
 
   console.log('sendModalDataList', sendModalDataList)
   return (
